@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年专题合集(1-9月) - 小北的搞钱社群</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts Noto Sans SC -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 引入 Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        /* 自定义配色变量 */
+        :root {
+            --color-deep-blue: #073B4C;
+            --color-tech-blue: #118AB2;
+            --color-mint-green: #06D6A0;
+            --color-mustard-yellow: #FFD166;
+            --color-coral-red: #FF6B6B;
+            --color-bg-gray: #f8fafc;
+            --color-ink-green: #004d40;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background-color: var(--color-bg-gray);
+            color: var(--color-deep-blue);
+        }
+
+        /* 颜色工具类 */
+        .text-deep-blue { color: var(--color-deep-blue); }
+        .text-tech-blue { color: var(--color-tech-blue); }
+        .text-mint-green { color: var(--color-mint-green); }
+        .text-coral-red { color: var(--color-coral-red); }
+        .bg-tech-blue { background-color: var(--color-tech-blue); }
+        .bg-mint-green { background-color: var(--color-mint-green); }
+        .bg-coral-red { background-color: var(--color-coral-red); }
+        
+        /* 墨绿渐变背景 */
+        .bg-ink-gradient {
+            background: linear-gradient(135deg, #0f3d3e 0%, #16605e 100%);
+        }
+
+        /* 左侧装饰线 */
+        .guide-line {
+            position: absolute;
+            left: 24px;
+            top: 20px;
+            bottom: 60px;
+            width: 2px;
+            background: #e2e8f0;
+            z-index: 0;
+        }
+
+        /* 卡片悬浮效果 */
+        .lesson-card {
+            transition: all 0.3s ease;
+            border-left-width: 6px;
+        }
+        .lesson-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen py-10 px-4 flex flex-col items-center bg-slate-100">
+
+    <!-- 统一大容器 -->
+    <div class="w-full max-w-4xl bg-white shadow-2xl overflow-hidden rounded-2xl border border-slate-200 flex flex-col">
+        
+        <!-- ==================== 顶部Header ==================== -->
+        <header class="w-full bg-ink-gradient relative overflow-hidden p-10 text-center group z-20">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-[#FFD166] rounded-full mix-blend-overlay filter blur-[80px] opacity-20"></div>
+            <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;"></div>
+            <div class="absolute -top-10 -right-10 w-32 h-32 border-4 border-white/10 rounded-full"></div>
+            <div class="relative z-10 flex flex-col items-center justify-center space-y-3">
+                <div class="mb-2 p-2 bg-white/10 rounded-full backdrop-blur-sm border border-white/20 inline-flex">
+                    <i class="ph-fill ph-crown text-2xl text-[#FFD166]"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-black text-white tracking-wide drop-shadow-md">
+                    小北的搞钱社群
+                </h1>
+                <div class="w-24 h-1 bg-gradient-to-r from-transparent via-[#FFD166] to-transparent opacity-80 my-2"></div>
+                <h2 class="text-lg md:text-xl font-medium text-[#FFD166] tracking-[0.3em] uppercase">
+                    2025 年度专题学习路线图
+                </h2>
+            </div>
+        </header>
+
+        <!-- ==================== 专题一：定位 (2月) ==================== -->
+        <section>
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <!-- 左侧标题区 -->
+                <div class="flex-1 p-8 bg-tech-blue text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-crosshair absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-tech-blue rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center">
+                            <i class="ph-fill ph-flag-banner mr-2"></i> 专题一
+                        </span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md">
+                        定位：精准定位与商业验证
+                    </h2>
+                </div>
+                <!-- 右侧时间轴 -->
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold">
+                        <i class="ph-fill ph-calendar-blank text-2xl mr-2 text-tech-blue"></i>
+                        <span class="text-2xl">2月份 (Feb)</span>
+                    </div>
+                </div>
+            </div>
+
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 找到你的个人定位</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年2月17日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>挖掘差异化赛道：</b>如何结合“自我优势”与“市场验证”，精准锁定既擅长又有钱途的细分领域。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>打造个人故事力：</b>挖掘你的核心竞争力，构建有血有肉、能打动用户的个人故事体系。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>超级符号包装：</b>如何将抽象的定位，包装成视觉统一、语言一致且高辨识度的个人IP形象。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>如何挖掘自身优势并结合市场，打造独一无二且易于传播的个人IP形象。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 避免自嗨，验证市场的需求</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年2月22日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>拒绝自嗨式创新：</b>利用竞争对手分析法，客观判断需求真伪，不再“闭门造车”做伪需求。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>差异化产品设计：</b>在红海中寻找蓝海，从对手的盲区中找到差异化切入点，设计出具备竞争力的产品。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>跑通商业最小闭环：</b>梳理从“引流”到“交付”的全流程，确保商业模式在逻辑上无懈可击。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>如何通过竞品分析设计差异化产品，并跑通商业闭环，确保做“卖得出去”的东西。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 爆款内容与流量密码</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年2月28日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>构建MVP（最小可行性产品）：</b>不盲目投入，先做核心功能，用最小成本构建产品雏形推向市场。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>设计爆款生产线：</b>掌握内容流量密码，建立标准化的爆款内容运营策略，持续获取流量。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>低成本市场试错：</b>利用内容作为流量探针，快速获取市场反馈并迭代优化，降低试错风险。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>如何利用MVP思维和爆款内容策略，以最低成本快速验证市场反馈，完成从0到1的启动。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">精准定位</span> → <span class="text-mint-green mx-2">竞品破局</span> → <span class="text-coral-red mx-2">MVP低成本验证，稳步跑通商业模式。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题二：精益化创业 (3月) ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <div class="flex-1 p-8 bg-mint-green text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-rocket-launch absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-mint-green rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题二</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">精益化创业</h2>
+                </div>
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-mint-green"></i><span class="text-2xl">3月份 (Mar)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 如何选择正确的赛道</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年3月17日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>需求判读的双重法则：</b>掌握两种核心方法判断需求真伪，避开伪需求陷阱，确保赛道本身有“水”可掘。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>赛道设计原则：</b>不仅仅是选行业，更是设计顶层的商业模式，确保生意从一开始就有盈利逻辑。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>信任破局之道：</b>如何在成交前解决最难的用户信任问题？教你“围绕结果”倒推，建立无可辩驳的信任状。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>如何科学筛选高潜力赛道，并通过结果导向思维，解决成交环节中最核心的信任难题。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 商业模式案例分析</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年3月21日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>差异化设计方法论：</b>在同质化严重的市场中，如何通过科学的方法论设计出让用户眼前一亮的产品。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>避开3大差异化误区：</b>盘点那些看似创新实则“自嗨”的常见坑，帮你节省无效投入的试错成本。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>实战案例拆解：</b>通过真实商业案例的深度解析，看懂别人是如何在红海中建立差异化护城河的。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>掌握产品差异化的核心设计逻辑，通过案例避坑，打造具有独特竞争力的商品。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 如何制定高效业务模式</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年3月27日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>高效模式设计：</b>如何通过资源优化与业务结构重组，设计出一套低内耗、高产出的业务流转模式。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>经典案例复盘：</b>“不懂英语却能年入几百万”？深度拆解普通人如何通过资源整合与借力，打破能力天花板。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>电商高手心法：</b>独家揭秘顾小北的电商底层方法论，学习顶尖操盘手的全局思维与资源配置策略。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>如何优化资源配置打造高效赚钱机器，并学习如何借力打力，突破个人能力局限实现高收益。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">精准选赛道</span> → <span class="text-mint-green mx-2">打造差异化</span> → <span class="text-coral-red mx-2">优化高效率，构建精益且高利润的商业闭环。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题三：小红书必爆选品 (4月) ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <div class="flex-1 p-8 bg-coral-red text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-shopping-bag absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-coral-red rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题三</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">小红书必爆选品</h2>
+                </div>
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-coral-red"></i><span class="text-2xl">4月份 (Apr)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 选品底层逻辑与赛道分析</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年4月14日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>透视平台逻辑：</b>揭秘小红书独特的“种草”基因，搞懂为什么有的产品在淘宝卖得好，在小红书却没人看？</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>锁定赚钱赛道：</b>不再盲目跟风，教你如何从海量类目中筛选出真正具备高溢价、高转化潜力的“吸金”赛道。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>选品细节心法：</b>掌握选品的微观细节，从源头确保选出的产品符合平台调性和用户喜好。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>彻底摸清小红书的选品“水性”，学会识别并切入那些能真正赚到钱的潜力赛道。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 多平台选品策略与方法实操</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年4月18日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>全网数据侦察：</b>打破单一平台视野，结合站内（小红书）与站外（淘宝/抖音等）数据，全方位捕捉爆品趋势。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>关键词掘金术：</b>不仅是看榜单，更教你利用“长尾关键词”挖掘出那些竞争少、利润高的冷门蓝海产品。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>实操选品SOP：</b>一套标准化的选品动作，手把手教你如何通过数据分析验证产品的爆款潜质。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>掌握站内站外结合的“数据选品法”，用关键词技巧挖掘出高利润的冷门蓝海爆品。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 筛品逻辑与定品策略</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年4月22日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>高效筛品工具表：</b>通过视觉表现、痛点直击、场景适配三大维度，快速淘汰90%的“垃圾品”。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>黄金三角法则：</b>深度解析视觉、痛点、场景在选品中的权重关系，教你一眼识别什么才是小红书用户买单的好品。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>颗粒度竞品拆解：</b>像做手术一样拆解竞品账号（定位、选题、人群画像），在对手的基础上做优化，确保一击必中。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>利用科学的筛品工具表和竞品拆解术，精准过滤劣质品，锁定最终的必爆单品。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">懂逻辑选赛道</span> → <span class="text-mint-green mx-2">挖数据找蓝海</span> → <span class="text-coral-red mx-2">用工具定爆品，建立科学严谨的选品体系。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题四：SD绘图 (5月) - 蓝色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <div class="flex-1 p-8 bg-tech-blue text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-paint-brush absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-tech-blue rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题四</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">Stable Diffusion 绘图入门与进阶</h2>
+                </div>
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-tech-blue"></i><span class="text-2xl">5月份 (May)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> AI绘图基础与SD工具全景</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年5月12日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>工具选型与底层逻辑：</b>深入对比不同AI绘图工具（如Midjourney与SD）的优劣，理解Stable Diffusion开源、可控的核心优势及底层生成原理。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>零基础入门指引：</b>手把手教你如何正确安装和部署SD，打破技术门槛，快速搭建属于自己的绘图工作台。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>资源宝库地图：</b>掌握模型、插件等核心学习资源的获取渠道（如C站等），建立持续进化的素材库。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>建立对AI绘图的全局认知，掌握SD的底层逻辑与资源获取能力，为实操打下坚实基础。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> SD核心功能实操与参数掌控</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年5月16日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>文生图“咒语”心法：</b>揭秘提示词（Prompt）的编写逻辑，配合采样器、步数等关键参数的精细调节，让AI精准画出你脑中的画面。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>图生图与反推黑科技：</b>学会“喂图”给AI进行二次创作，以及如何一键反推优秀作品的提示词，快速复制大神风格。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>修图与优化秘籍：</b>掌握局部重绘与细节优化技巧，解决AI画手崩、脸崩等常见问题，把废片变大片。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>彻底掌握SD的“方向盘”，通过精准的提示词和参数控制，实现从“抽盲盒”到“定制化”的转变。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 绘图进阶技巧与商业变现案例</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年5月20日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>商业级画质进阶：</b>突破分辨率与细节限制，掌握高清修复与ControlNet等进阶玩法，产出可商用的高清大图。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>商业案例全案拆解：</b>从电商模特、产品摄影到海报设计，通过真实商业场景的实战演练，打通变现路径。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>实战演练：</b>通过具体案例手把手带练，将理论转化为可交付的商业设计成果。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>掌握提升画质的进阶技术，并通过商业案例实操，将AI绘图技能转化为可以直接变现的生产力。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">懂原理装工具</span> → <span class="text-mint-green mx-2">控参数出好图</span> → <span class="text-coral-red mx-2">搞实战做商业，从小白进阶为AI设计大神。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题五：小红书开店 (6月) - 绿色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <div class="flex-1 p-8 bg-mint-green text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-storefront absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-mint-green rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题五</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">小红书开店实战</h2>
+                </div>
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-mint-green"></i><span class="text-2xl">6月份 (Jun)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 小红书的基础开店流程</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年6月09日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>开店资格自检：</b>不是所有账号都适合立马开店。深度解析什么阶段、什么类型的账号才具备“变现体质”。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>店铺类型生死选：</b>个人店、个体店、企业店到底选哪个？从税收、流量权重到信任背书，剖析不同店铺类型的利弊，选错步步错。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>保姆级开店路书：</b>拆解开店全流程，重点标注那些官方不讲但容易违规封店的“隐形雷区”。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>清楚自己适不适合开店，并能精准选择最适合自己的店铺类型，零失误完成店铺搭建。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 小红书主理人模式</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年6月13日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>主理人思维升级：</b>从“卖货郎”进阶为“主理人”。为什么高手都在玩多账号、多店铺、多产品？揭秘这种“饱和式攻击”的底层逻辑。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>矩阵流量打法：</b>单号天花板太低？教你如何从单账号运营裂变为全链路内容矩阵，让流量成倍增长。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>素材复用逻辑：</b>揭秘矩阵背后的“素材工厂”逻辑，如何用一套素材喂饱多个账号，实现效率最大化。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>跳出单打独斗的局限，掌握“主理人矩阵”打法，利用多账号策略霸占赛道流量。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 供应链深耕与流量放大</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年6月19日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>供应链实战答疑：</b>做无货源还是囤货？如何搞定定制化货源？解决选品后端的“发货与品控”难题。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>流量起飞全攻略：</b>从起号冷启动准备，到中后期的流量瓶颈突破，全方位解答运营中的流量焦虑。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>团队裂变管理：</b>主理人模式如何做大？教你如何招募合伙人、设计利益绑定与激励机制，让别人死心塌地为你赚钱。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>解决供应链管理、流量瓶颈及团队扩张中的疑难杂症，确保生意能持续做大做强。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">合规开好店</span> → <span class="text-mint-green mx-2">矩阵搞流量</span> → <span class="text-coral-red mx-2">后端稳交付，打造可复制的小红书电商闭环。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题六：AI提效 (7月) - 红色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <div class="flex-1 p-8 bg-coral-red text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-robot absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-coral-red rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题六</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">AI提效</h2>
+                </div>
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-coral-red"></i><span class="text-2xl">7月份 (Jul)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 驾驭AI：AI高效应用基础与提问技巧</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年7月07日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>破解AI“胡说八道”：</b>为什么你觉得AI笨？因为你不会问。深度解析高效提问的五大核心要素，让AI精准理解你的意图。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>结构化提示词公式：</b>告别碎片化指令，掌握一套万能的结构化提问公式（BROKE/ICDO等变体），让AI输出专家级结果。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>AI任务外包策略：</b>并不是所有事都适合丢给AI。教你科学判断哪些任务是AI的“舒适区”，实现人机协作效率最大化。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>掌握与AI沟通的底层逻辑，学会用结构化公式指挥AI，把繁琐工作科学地“外包”给AI。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 构建数字员工：Coze智能体构建与自动化任务整合</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年7月11日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>Coze生态解密：</b>初步了解Coze平台，如何利用插件生态将AI与互联网实时数据连接，打破AI的“信息茧房”。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>工作流搭建实操：</b>不需要写代码，通过拖拽式操作搭建自动化工作流，定制属于你的“超级智能体”。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>跨平台流转黑科技：</b>实战演示如何“一键采集小红书内容”，并自动清洗、改写，构建跨平台的内容自动流转助手。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>从零搭建一个能帮你自动干活的“数字员工”，实现从小红书采集到内容处理的全自动化。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 打造内容中台：飞书多维表AI功能与内容系统搭建</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年7月15日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>多维表逻辑重构：</b>多维表不是Excel。理解其数据库逻辑，构建能够承载海量素材与数据的“第二大脑”。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>AI字段的魔法应用：</b>如何利用多维表自带的AI字段，在表格里直接实现自动打标签、自动摘要、自动翻译等批量处理。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>自动化内容库搭建：</b>实操搭建一套标准化的内容库系统，让素材管理从“文件夹堆积”升级为“智能资产库”。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>利用飞书多维表+AI能力，搭建一套自动化、智能化的企业级内容管理系统，极大提升团队协作效率。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">学会提问</span> → <span class="text-mint-green mx-2">搭建工具(Coze)</span> → <span class="text-coral-red mx-2">沉淀系统(飞书)，构建个人超级生产力闭环。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题七：批量自动化剪辑 (8月) - 蓝色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <div class="flex-1 p-8 bg-tech-blue text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-film-strip absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-tech-blue rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题七</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">批量自动化剪辑</h2>
+                </div>
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-tech-blue"></i><span class="text-2xl">8月份 (Aug)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 【思维篇】搭建“自动化流水线”</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年8月04日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>痛点直击：</b>揭示手动剪辑的“作坊式”陷阱，为什么你每天熬夜剪辑却依然产出低？</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>破局关键：</b>识别剪辑工作中80%的无效重复劳动，找到被你忽略的时间黑洞。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>解法落地：</b>像造汽车一样造视频。教你将内容拆解为标准化组件，搭建“组件化+自动化”的高效生产流水线。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>彻底重塑内容生产思维，学会将非标的创意工作转化为标准化的工业流程，摆脱低效勤奋。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 【规模篇】从单打独斗，到百号齐发</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年8月09日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>账号裂变路径：</b>揭秘从运营1个账号到管理100个账号的扩张路线图，实现指数级增长。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>工具赋能管理：</b>不靠堆人头，靠堆工具。掌握支撑矩阵账号高效运转的核心管理工具与技术支撑。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>自动化引流逻辑：</b>拆解矩阵玩法的核心——如何利用自动化操作逻辑，让海量账号协同作战，实现全网霸屏引流。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>掌握矩阵账号的规模化扩张与管理技术，利用自动化工具实现“一人成军”的流量覆盖。</p></div>
+                        </div>
+                    </article>
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 【变现篇】打造“赚钱机器”</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年8月12日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>避坑指南：</b>想赚尽所有钱往往一分赚不到。教你砍掉低效环节，聚焦核心优势。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>系统迭代升级：</b>从1.0的手动测试到2.0的自动运转，手把手教你打磨一套更省心的自动化赚钱系统。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>盈利算账逻辑：</b>不算账的生意是耍流氓。通过数据验证，算清“投入产出比”，确保机器一开就在赚钱。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>如何构建并迭代一套低维护、高产出的自动化盈利系统，实现从“人赚钱”到“系统赚钱”的跨越。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">建立工业化思维</span> → <span class="text-mint-green mx-2">利用工具扩规模</span> → <span class="text-coral-red mx-2">聚焦核心算利润，打造自动化的流量印钞机。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+<!-- ==================== 专题八：抖音如何起号和直播爆量 (9月) - 绿色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <!-- 左侧标题区 -->
+                <div class="flex-1 p-8 bg-mint-green text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-video-camera absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-mint-green rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题八</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">抖音起号与直播爆量</h2>
+                </div>
+                <!-- 右侧时间轴 -->
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-mint-green"></i><span class="text-2xl">9月份 (Sep)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <!-- Lesson 1 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 抖音起号路径与电商趋势判断</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年9月01日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>起号路径全景图：</b>打破幻想，深度解析达人/商家/白牌的账号定位与起号玩法差异。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>电商红利洞察：</b>站在风口上，剖析抖音电商当前发展阶段，帮你识别哪里还有流量红利。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>入局可行性自检：</b>不要盲目进场做炮灰。教你通过分析竞争对手的核心数据，客观评估自己是否有能力吃这碗饭。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>看清抖音电商的真实生态，通过数据评估自身实力，选择最适合自己的起号路径。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 2 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 流量底层逻辑与爆量实操</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年9月04日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>兴趣电商生死观：</b>彻底颠覆传统电商（人找货）思维，建立抖音“货找人”的底层认知，不懂这个永远做不起来。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>赛马机制解密：</b>揭秘直播间流量分发的“赛马”逻辑，掌握人、货、场4大核心要素，让系统主动给你推流。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>爆量模型实操：</b>从理论到落地，通过拆解关键数据指标，计算出能承接住流量的“完美定价”模型。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>摸透抖音“赛马”推荐算法，掌握利用人货场匹配和科学定价去撬动自然流量的爆量法则。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 3 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 抖音如何起号与准备</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年9月09日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>避坑防封指南：</b>详细列出小店和直播间的“高压线”，教你规避常见的违规操作，保住账号安全。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>直播备战SOP：</b>从设备调试到心态建设，列出直播前、中、后的全套准备清单，不打无准备之仗。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>高转化话术拆解：</b>不仅教你怎么写脚本，更教你怎么“扒”对手的话术。掌握刺激用户痛点的底层逻辑，把别人的话术变成你的成交利器。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>学会规避平台违规风险，并掌握一套能从对手那里“偷师”并快速变现的直播话术与脚本技巧。</p></div>
+                        </div>
+                    </article>
+                    <!-- Summary -->
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">研判趋势定方向</span> → <span class="text-mint-green mx-2">搞懂算法抢流量</span> → <span class="text-coral-red mx-2">优化话术促成交，系统化打通抖音直播起号流程。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题九：私域 (9月) - 红色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <!-- 左侧标题区 -->
+                <div class="flex-1 p-8 bg-coral-red text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-users-three absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-coral-red rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题九</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">私域流量与社群营销</h2>
+                </div>
+                <!-- 右侧时间轴 -->
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-coral-red"></i><span class="text-2xl">9月份 (Sep)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <!-- Lesson 1 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 有效获客与承接</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年9月08日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>全域引流场景设计：</b>私域不是加个微信就完了。解析不同行业的引流逻辑，设计能让用户主动进圈的“流量诱饵”和场景。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>新客SOP（标准作业程序）：</b>打造新客进店的“黄金24小时”接待流程。通过标准化的SOP话术与动作，让陌生人迅速转化为准客户。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>沉睡用户激活术：</b>拒绝死粉。掌握激活存量“僵尸粉”的核心策略，让躺在通讯录里的静默用户重新产生价值。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>如何设计引流钩子把人“圈进来”，并通过标准化的接待流程和激活手段，把流量变成“留量”。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 2 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 会员体系与用户分层</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年9月11日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>会员体系0-1搭建：</b>从积分、等级到权益，手把手教你搭建一套能让用户“上瘾”并持续复购的会员成长体系。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>RFM模型实战：</b>拒绝群发骚扰。利用RFM（最近消费、频率、金额）模型对用户进行价值分层，精准锁定高价值客户进行收割。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>科学标签体系：</b>建立精细化的用户标签库，实现“千人千面”的精准触达，让每一条私信都能打中用户痛点。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>告别“大锅饭”式的粗放运营，建立科学的会员与标签体系，利用数据分层实现销售额倍增。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 3 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 异业合作与社群营销结合</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年9月16日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>AI+RPA自动化营销：</b>揭秘如何利用RPA（机器人流程自动化）工具打造社群“氛围组”（水军），实现24小时自动化的活跃与营销。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>异业合作破局：</b>流量不够，借力来凑。教你如何设计“钩子”调研用户意向，低成本撬动其他行业的精准流量进行跨界变现。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>AI低成本种草：</b>利用AI技术批量生产种草内容，结合媒介策略，以极低成本在私域内完成“洗脑式”营销。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>学会利用AI工具自动化管理社群氛围，并通过异业合作借力打力，实现低成本的流量扩张与变现。</p></div>
+                        </div>
+                    </article>
+                    <!-- Summary -->
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">SOP承接留存</span> → <span class="text-mint-green mx-2">RFM分层深耕</span> → <span class="text-coral-red mx-2">AI自动化+异业扩张，打造私域资产增值闭环。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+<!-- ==================== 专题十：抖音投放、开店和复盘 (10月) - 蓝色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <!-- 左侧标题区 -->
+                <div class="flex-1 p-8 bg-tech-blue text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-trend-up absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-tech-blue rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题十</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">抖音投放、开店与复盘</h2>
+                </div>
+                <!-- 右侧时间轴 -->
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-tech-blue"></i><span class="text-2xl">10月份 (Oct)</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <!-- Lesson 1 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> 投放入门：DOU+、随心推与千川实战</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年10月20日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>投放工具全景图：</b>彻底厘清DOU+、随心推与千川的底层逻辑差异，知道何时用何种工具最划算。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>预算规划与止损：</b>掌握科学的预算规划思路，设定止盈止损线，确保每一分钱都花在刀刃上。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>低成本测素材：</b>建立“赛马”机制，学会用小预算快速测试视频素材，筛选出高转化“爆款素材”后再放大。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>告别盲目烧钱，掌握不同投放工具的组合拳，学会用小成本测试撬动大流量。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 2 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> 开店入门：冷启动与货架场建设</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年10月23日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>店铺基建与避坑：</b>从后台认知到基础设置，手把手带你完成店铺搭建，避开新手常见的违规与设置误区。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>货架场经营策略：</b>建立科学的商品货架体系，利用“商品卡”流量承接非直播时段的自然成交。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>破零与冷启动：</b>揭秘利用“短视频内容+达人合作”的双轮驱动策略，快速打破新店零销量僵局。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>完成高权重的店铺搭建，掌握利用商品卡和达人带货快速实现新店冷启动的实操技巧。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 3 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> 复盘入门：数据诊断与经营优化</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年10月29日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>直播数据听诊器：</b>教你读懂直播后台核心数据（停留、互动、GPM），精准找出问题出在哪。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>进阶复盘方法论：</b>掌握一套标准化的直播复盘流程，通过逐帧分析提升直播间的人货场表现。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>店铺健康度体检：</b>学会分析店铺体验分与经营数据，根据反馈调整选品与服务，拉升店铺权重。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>培养“数据驱动”的运营思维，学会通过复盘精准诊断问题，持续提升直播间转化率与店铺评分。</p></div>
+                        </div>
+                    </article>
+                    <!-- Summary -->
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">精准投流测素材</span> → <span class="text-mint-green mx-2">科学开店搞冷启</span> → <span class="text-coral-red mx-2">数据复盘提权重，打通抖音电商变现全链路。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+<!-- ==================== 专题十一：coze工作流进阶 (10-11月) - 绿色主题 ==================== -->
+        <section class="border-t-4 border-slate-100">
+            <div class="flex flex-col md:flex-row border-b border-slate-100 z-10 relative overflow-hidden">
+                <!-- 左侧标题区 -->
+                <div class="flex-1 p-8 bg-mint-green text-white relative overflow-hidden flex flex-col justify-center">
+                    <i class="ph-fill ph-robot absolute -right-6 -bottom-6 text-white/10 text-9xl transform rotate-12"></i>
+                    <div class="inline-flex items-center bg-white text-mint-green rounded-lg px-4 py-2 w-fit mb-4 shadow-md">
+                        <span class="text-lg font-bold tracking-wide flex items-center"><i class="ph-fill ph-flag-banner mr-2"></i> 专题十一</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-black leading-tight relative z-10 drop-shadow-md tracking-tight">coze工作流进阶</h2>
+                </div>
+                <!-- 右侧时间轴 -->
+                <div class="md:w-1/3 p-6 flex flex-col justify-center bg-white border-l border-slate-100">
+                    <span class="text-xs font-bold text-slate-400 uppercase block mb-1">Timeline</span>
+                    <div class="flex items-center text-deep-blue font-bold"><i class="ph-fill ph-calendar-blank text-2xl mr-2 text-mint-green"></i><span class="text-2xl">10月-11月份</span></div>
+                </div>
+            </div>
+            <main class="p-8 relative bg-white pb-12">
+                <div class="guide-line hidden md:block"></div>
+                <div class="space-y-8 relative z-10">
+                    <!-- Lesson 1 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-tech-blue rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-tech-blue rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-tech-blue rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-tech-blue mr-2">第一课：</span> AI自动化口播视频生成系统实战</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-tech-blue mr-2"></i> 2025年10月27日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>数字分身克隆术：</b>无需化妆、灯光和拍摄。手把手教你克隆自己的形象和声音，打造一个24小时无休的“数字替身”。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>批量化视频合成：</b>告别逐条录制的痛苦。建立自动化工作流，输入文案，后台自动批量生成高质量的口播视频。</span></li><li class="flex items-start"><span class="text-tech-blue mr-2 shrink-0">•</span><span><b>飞书+Coze联动：</b>打通办公软件与AI大脑的连接。实操演示如何在飞书里发送指令，直接调用Coze工作流完成视频生产交付。</span></li></ul></div>
+                            <div class="bg-blue-50/50 rounded p-3 border border-blue-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-tech-blue"></i> <b>这节课你可以学到：</b>打造属于你的“数字人分身”，并搭建一套零拍摄成本的自动化口播视频生产工厂。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 2 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-mint-green rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-mint-green rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-mint-green rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-mint-green mr-2">第二课：</span> AI自动化公众号“写作机器人”</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-mint-green mr-2"></i> 2025年10月30日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>全网情报自动抓取：</b>建立自动化爬虫机制，24小时监控全网热点与特定信息，解决“写什么”的素材焦虑。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>AI深度二创洗稿：</b>利用大模型对采集内容进行深度改写、排版和润色，确保内容原创度与可读性，规避查重风险。</span></li><li class="flex items-start"><span class="text-mint-green mr-2 shrink-0">•</span><span><b>全自动内容生成：</b>打通“采集-写作-草稿”的最后一公里。利用第三方插件，实现从素材获取到文章生成的全流程无人值守。</span></li></ul></div>
+                            <div class="bg-green-50/50 rounded p-3 border border-green-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-mint-green"></i> <b>这节课你可以学到：</b>搭建一个“不睡觉的编辑部”，实现公众号文章从选题查找、内容撰写到排版的完全自动化。</p></div>
+                        </div>
+                    </article>
+                    <!-- Lesson 3 -->
+                    <article class="md:pl-12 relative group">
+                        <div class="hidden md:flex absolute left-[10px] top-0 w-8 h-8 bg-white border-4 border-coral-red rounded-full items-center justify-center z-10"><div class="w-2 h-2 bg-coral-red rounded-full"></div></div>
+                        <div class="lesson-card bg-white border border-slate-100 border-l-coral-red rounded-r-lg p-6 shadow-sm">
+                            <header class="mb-4 border-b border-slate-100 pb-3 flex justify-between items-center flex-wrap gap-2">
+                                <h3 class="text-lg font-bold text-deep-blue flex items-center"><span class="text-coral-red mr-2">第三课：</span> AI自动化视频工作流（剪映对接）</h3>
+                                <div class="flex items-center text-sm text-slate-500 font-medium bg-slate-50 px-3 py-1 rounded-full"><i class="ph-bold ph-calendar-check text-coral-red mr-2"></i> 2025年11月04日</div>
+                            </header>
+                            <div class="mb-4"><h4 class="text-xs font-bold text-slate-400 mb-2 uppercase flex items-center"><i class="ph-bold ph-star mr-1"></i> 核心要点</h4><ul class="space-y-3 text-slate-600 text-sm"><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>透视视频底层逻辑：</b>从剪辑软件的操作层面，从代码和轨道层面理解视频是如何被“构建”出来的。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>程序化剪辑实战：</b>利用Coze调用剪映小助手，通过逻辑编排自动设计视频轨道、特效与转场。</span></li><li class="flex items-start"><span class="text-coral-red mr-2 shrink-0">•</span><span><b>云端草稿一键生成：</b>输入一个指令，AI不仅生成文稿和视频，还能直接合成“剪映云端草稿”。</span></li></ul></div>
+                            <div class="bg-red-50/50 rounded p-3 border border-red-100"><p class="text-xs text-slate-600 leading-relaxed"><i class="ph-bold ph-lightbulb mr-1 text-coral-red"></i> <b>这节课你可以学到：</b>掌握“指令即剪辑”的高阶玩法，让AI帮你完成重复的剪辑轨道搭建，直接生成可编辑的工程文件。</p></div>
+                        </div>
+                    </article>
+                    <div class="md:pl-12 mt-4"><div class="bg-slate-50 border border-slate-200 rounded-lg p-4 text-center"><p class="text-sm font-bold text-deep-blue flex items-center justify-center"><i class="ph-fill ph-path text-mustard-yellow mr-2 text-xl"></i> 专题主线：<span class="text-tech-blue mx-2">克隆数字分身</span> → <span class="text-mint-green mx-2">自动化图文矩阵</span> → <span class="text-coral-red mx-2">程序化视频剪辑，构建全媒体自动驾驶系统。</span></p></div></div>
+                </div>
+            </main>
+        </section>
+
+        <!-- ==================== 专题十二：抖音如何起号和直播爆量 (12月) - 绿色主题 (Placeholder) ==================== -->
+        <footer class="bg-slate-50 border-t border-slate-200 p-6">
+            <div class="flex items-center justify-between opacity-60">
+                <div class="flex items-center space-x-2"><span class="w-2 h-2 bg-slate-400 rounded-full animate-pulse"></span><span class="text-sm font-bold text-slate-500">NEXT TOPIC PREVIEW</span></div>
+                <div class="h-px bg-slate-300 flex-1 mx-4"></div>
+            </div>
+            <div class="mt-4 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-slate-400 block mb-1">专题八 (9月)</span>
+                    <h3 class="text-lg font-bold text-slate-700">抖音如何起号和直播爆量 <span class="text-xs font-normal text-slate-400 ml-2">(Coming Soon)</span></h3>
+                </div>
+                <i class="ph-bold ph-arrow-right text-2xl text-slate-300"></i>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
